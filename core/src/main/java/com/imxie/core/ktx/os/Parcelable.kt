@@ -1,4 +1,4 @@
-package io.iftech.android.sdk.ktx.os
+package com.imxie.core.ktx.os
 
 import android.os.Build
 import android.os.Parcel
