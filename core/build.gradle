@@ -4,7 +4,7 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    buildToolsVersion "29.0.3"
 
     defaultConfig {
         minSdkVersion 23
@@ -41,5 +41,14 @@ dependencies {
     implementation 'com.jakewharton.timber:timber:4.7.1'
     // drawable
     api "com.github.infotech-group:android-drawable-dsl:0.3.0"
+
+    // https://github.com/gyf-dev/ImmersionBar
+    // 基础依赖包，必须要依赖
+    def bar = "3.0.0"
+    api "com.gyf.immersionbar:immersionbar:$bar"
+    // fragment快速实现（可选）
+    api "com.gyf.immersionbar:immersionbar-components:$bar"
+    // kotlin扩展（可选）
+    api "com.gyf.immersionbar:immersionbar-ktx:$bar"
 
 }

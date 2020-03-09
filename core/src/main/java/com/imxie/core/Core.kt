@@ -1,6 +1,8 @@
 package com.imxie.core
 
+import android.app.Application
 import android.content.Context
+import com.imxie.core.arch.AppLifecycle
 
 object Core {
 
@@ -8,5 +10,6 @@ object Core {
 
     fun init(context: Context) {
         this.context = context
+        AppLifecycle.install(context as Application)
     }
 }

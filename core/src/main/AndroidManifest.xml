@@ -1,2 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.imxie.core" />
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.imxie.core">
+
+    <application
+        android:maxAspectRatio="2.4"
+        android:resizeableActivity="true">
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.4" />
+    </application>
+</manifest>

@@ -4,7 +4,9 @@ import android.content.Context
 import android.graphics.Rect
 import android.util.DisplayMetrics
 import android.view.WindowManager
+import com.gyf.immersionbar.ImmersionBar
 import com.imxie.core.Core
+import com.imxie.core.arch.AppLifecycle
 import com.imxie.core.ktx.content.dip
 import com.imxie.core.ktx.kotlin.unsafeLazy
 
@@ -48,6 +50,11 @@ object EnvUtil {
     @JvmStatic
     val statusBarSize: Int by unsafeLazy {
         getInternalDimensionSize(Core.context, "status_bar_height")
+    }
+
+    @JvmStatic
+    val navBarSize: Int by unsafeLazy {
+        ImmersionBar.getNavigationBarHeight(AppLifecycle.instance().curActivity)
     }
 
     @JvmStatic
