@@ -35,6 +35,9 @@ dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
 
+    // rxjava
+    api "io.reactivex.rxjava3:rxjava:3.0.0"
+
     // ktx
     api 'androidx.core:core-ktx:1.2.0'
     // log
